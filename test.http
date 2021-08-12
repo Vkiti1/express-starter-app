@@ -1,0 +1,30 @@
+GET http://localhost:8002/
+###
+
+GET http://localhost:8002/not-found
+###
+
+GET http://localhost:8002/error
+###
+GET http://localhost:8002/student-data?firstName=Viktor&lastName=Škifić&email=viktor.skific@gmail.com
+Content-Type: application/json
+###
+
+POST http://localhost:8002/authorization
+Content-Type: application/json
+Authorization: test
+
+{
+    "firstName": "Viktor",
+    "lastName": "Škifić",
+    "email": "viktor.skific@gmail.com",
+    "id": 756987
+}
+###
+
+GET http://localhost:8002/private-route
+Authorization: 0972164370bb3a0c266fbd18c09c9e87
+###
+
+GET http://localhost:8002/private-route
+Authorization: 790f2b152ad1010b8db473b206bb6725

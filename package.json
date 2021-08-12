@@ -1,0 +1,20 @@
+{
+  "name": "express_viktor_skific",
+  "version": "1.0.0",
+  "description": "express starter app assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Viktor Škifić",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "md5": "^2.3.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
